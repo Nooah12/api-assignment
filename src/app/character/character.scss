@@ -1,0 +1,30 @@
+@import '@/styles/_variables.scss';
+@import '@/styles/_mixins';
+
+.character {
+    &-container {
+        background-color: rgb(175, 163, 116);
+        flex-grow: 1;
+        @include flexcol;
+        justify-content: center;
+
+        &__title {
+            font-size: $text-l;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        &__types {
+            margin-bottom: 16px;
+        }
+
+        &__button {
+            @include styled-button;
+        }
+    }
+
+    &-types {
+        margin-bottom: 12px;
+        font-size: $text-m;
+    }
+}

@@ -1,0 +1,51 @@
+// Fonts
+@font-face {
+    font-family: 'MyLocalFont';
+    src: url('../../public/fonts/one-piece-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-family-custom: 'MyLocalFont', sans-serif;
+
+// Colors
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$accent-color: #e74c3c;
+$background-color: #f5f5f5;
+$text-color: #333;
+$muted-color: #7f8c8d;
+
+// Typography
+//$font-family-base: 'Helvetica Neue', Arial, sans-serif;
+$text-base: 16px;
+
+$text-s : $text-base / 2;    // 8px
+$text-m : $text-base * 1.5;  // 24px
+$text-l : $text-base * 2;    // 32px
+$text-xl : $text-base * 3;   // 48px
+$text-xxl : $text-base * 4;  // 64px
+$text-xxxl : $text-base * 5; // 80px
+
+// Spacing
+$spacing-unit: 1rem;
+$spacing-small: 0.5rem;
+$spacing-medium: 1.5rem;
+$spacing-large: 2rem;
+
+// Borders
+$border-radius: 4px;
+$border-color: #ddd;
+$border-width: 1px;
+
+// Screen Sizes (Breakpoints)
+$screen-xs: 360px;
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1200px;
+
+// Container Sizes
+$container-width-sm: 540px;
+$container-width-md: 720px;
+$container-width-lg: 960px;
+$container-width-xl: 1440px;

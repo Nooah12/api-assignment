@@ -1,0 +1,24 @@
+@import '../styles/_variables.scss';
+@import '../styles/mixins';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-family-custom;
+}
+
+header {
+    background-color: cornsilk;
+    padding: 24px;
+    text-align: center;
+}
