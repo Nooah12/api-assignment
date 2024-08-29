@@ -1,4 +1,4 @@
-@import '@/styles/_variables.scss';
+/* @import '@/styles/_variables.scss';
 @import '@/styles/_mixins';
 
 .character-section {
@@ -42,4 +42,63 @@
     }
 
 
+} */
+
+
+@import '@/styles/_variables.scss';
+@import '@/styles/_mixins';
+
+.character-section {
+    @include flexcol;
+    flex-grow: 1;
+    background: $background-color;
+    padding: $indent-l;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-container {
+        @include flexcol;
+        align-items: center;
+        justify-content: center;
+        padding: $indent-l;
+        background-color: rgb(175, 163, 116);
+        border-radius: 10px;
+        width: 300px;
+        min-height: 200px;
+
+        @include responsive-tablet {
+            width: 450px;
+            min-height: 300px;
+        }
+
+        &__title {
+            font-size: $indent-l;
+            margin-bottom: $indent-m;
+
+            @include responsive-tablet {
+                font-size: $indent-xl;
+            }
+        }
+
+        &__button {
+            @include styled-button;
+            margin-top: $indent-m;
+        }
+
+        &__types {
+            align-items: flex-start;
+            margin-top: $indent-base;
+        }
+
+        &__detail {
+            font-size: $indent-base;
+            margin-bottom: $indent-s;
+            color: $text-color;
+
+            @include responsive-tablet {
+                font-size: $indent-m;
+            }
+        }
+    }
 }
