@@ -2,7 +2,7 @@
 
 @mixin flexrow {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     max-width: 100%;
 }
@@ -55,4 +55,18 @@
             box-shadow: #3c4fe0 0 3px 7px inset;
             transform: translateY(2px);
         }
+}
+
+// Responsiveness
+
+@mixin responsive-desktop {
+    @media screen and (min-width: $screen-lg) {
+        @content; // @include responsive-desktop 
+    }
+}
+
+@mixin responsive-tablet {
+    @media screen and (min-width: $screen-sm) {
+        @content; // @include responsive-tablet global.scss 
+    }
 }

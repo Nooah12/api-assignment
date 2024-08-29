@@ -1,15 +1,27 @@
 @import '@/styles/_variables.scss';
 @import '@/styles/_mixins';
 
+.character-section {
+    flex-grow: 1;
+    background: $background-color;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    //max-width: 50%;
+}
+
 .character {
     &-container {
         background-color: rgb(175, 163, 116);
-        flex-grow: 1;
         @include flexcol;
         justify-content: center;
+        max-width: 400px;
+        border-radius: $border-radius;
+        padding: 24px;
 
         &__title {
-            font-size: $text-l;
+            font-size: $indent-l;
             text-align: center;
             margin-top: 0;
         }
@@ -18,13 +30,16 @@
             margin-bottom: 16px;
         }
 
+        &__detail {
+            margin-bottom: 12px;
+            font-size: $indent-m;
+        }
+
         &__button {
             @include styled-button;
+            margin-bottom: 16px;
         }
     }
 
-    &-types {
-        margin-bottom: 12px;
-        font-size: $text-m;
-    }
+
 }

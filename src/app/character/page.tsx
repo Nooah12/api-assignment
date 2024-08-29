@@ -29,10 +29,12 @@ const CharacterPage = () => {
     }, []);
 
     return (
-        <section className='character-container'>
-          <h2 className='character-container__title'>Characters</h2>
-          {character && <FeaturedCharacter {...character} />}
-          <button onClick={getData} className='character-container__button'>Click me!</button>
+        <section className='character-section'>
+          <div className='character-container'>
+            <h2 className='character-container__title'>Characters</h2>
+            {character && <FeaturedCharacter {...character} />}
+            <button onClick={getData} className='character-container__button'>Click me!</button>
+          </div>
         </section>
     );
 };

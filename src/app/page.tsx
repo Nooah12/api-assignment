@@ -1,12 +1,13 @@
 'use client'
 
-import FeaturedCharacter from "@/components/FeaturedCharacter/FeaturedCharacter";
-
 export default function Home() {
 
   return (
     <main>
-      <FeaturedCharacter name={""} job={""} bounty={""}  />
+      <div className="home-container">
+        <h1>Welcome to the One Piece API</h1>
+        <h2>Choose between a character or a fruit!</h2>
+      </div>
     </main>
   );
 }

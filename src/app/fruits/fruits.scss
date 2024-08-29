@@ -1,0 +1,136 @@
+@import '@/styles/_variables.scss';
+@import '@/styles/_mixins';
+ 
+ .fruits-section {
+     @include flexcol;
+     flex-grow: 1;
+     background: $background-color;
+ 
+     &-title {
+         padding-top: $indent-l;
+ 
+         @include responsive-tablet {
+             font-size: $indent-xl;
+         }
+     }
+ 
+     &-list {
+         list-style-type: none;
+         padding: 0;
+         margin-bottom: $indent-l;
+ 
+         li {
+             margin-bottom: 10px;
+ 
+             a {
+                 text-decoration: none;
+                 color: $text-color;
+                 font-size: $indent-base;
+ 
+                 &:hover {
+                     text-decoration: underline;
+                 }
+             }
+ 
+             @include responsive-tablet {
+                 margin-bottom: 15px;
+                 a {
+                     font-size: $indent-m;
+                 }
+             }
+ 
+             @include responsive-desktop {
+                 margin-bottom: 20px;
+                 a {
+                     font-size: $indent-l;
+                 }
+             }
+         }
+     }
+ 
+     &-details {
+         margin: $indent-m;
+         padding: $indent-base;
+         display: flex;
+         flex-direction: column;
+         background: beige;
+         border-radius: 30px;
+ 
+         h2 {
+             font-size: $indent-m;
+         }
+ 
+         p {
+             font-size: $indent-base;
+         }
+ 
+         img {
+             max-width: 10vh;
+             height: auto;
+             margin-top: 10px;
+             align-self: center;
+         }
+ 
+         @include responsive-tablet {
+             padding: $indent-m;
+             max-width: $container-width-sm;
+ 
+             h2 {
+                 font-size: $indent-l;
+             }
+ 
+             p {
+                 font-size: $indent-m;
+             }
+ 
+             img {
+                 max-width: 15vh;
+                 height: auto;
+             }
+         }
+     }
+ 
+     &-types {
+         padding-top: $indent-xl;
+         font-size: $indent-base;
+ 
+         a {
+             color: $text-color;
+             text-decoration: overline;
+             padding: $indent-s;
+ 
+             &:hover {
+                 text-decoration: underline;
+                 color: $secondary-color;
+             }
+ 
+             @include responsive-tablet {
+                 padding: $indent-l;
+             }
+         }
+ 
+         @include responsive-tablet {
+             padding-top: $indent-xxl;
+             font-size: $indent-l;
+         }
+     }
+ 
+     a {
+         margin-bottom: $indent-s;
+         color: $text-color;
+         text-decoration: none;
+ 
+         &:hover {
+             text-decoration: underline;
+         }
+ 
+         @include responsive-tablet {
+             font-size: $indent-m;
+         }
+ 
+         @include responsive-desktop {
+             font-size: $indent-l;
+         }
+     }
+ }
+ 
